@@ -1,0 +1,10 @@
+
+constructor	public Giant()
+getColor	Color.GRAY
+toString	"fee" for 6 moves, then "fie"
+             for 6 moves, then "foe" for 
+            6 moves, then "fum" for 6 
+            moves, then repeat
+getMove	Infect if an enemy is in front;
+         otherwise hop if empty in front;
+          otherwise turn right
