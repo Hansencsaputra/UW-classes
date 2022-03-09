@@ -69,7 +69,7 @@ public class Personality
     {
         for (int i = 0; i < 7; i++)
         {
-            for (int j = i; j < 70; j += 7) 
+            for (int j = i; j < testAnswers.length(); j += 7) 
             {
                 if (i == 0)
                 {
@@ -118,7 +118,7 @@ public class Personality
     //    int[] bCounts - Array storing the count of Bs for each category
     public static void countBPercentage(int[] aCounts, int[] bCounts, int[] bPercentage)
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < NUM_OF_DIMENSIONS; i++)
         {
             bPercentage[i] = (int)Math.round((bCounts[i] / ((double)bCounts[i] + aCounts[i])) * 100);
         }
